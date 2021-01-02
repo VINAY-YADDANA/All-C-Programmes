@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+void main()
+{
+    char s[20];
+    //char A,Z;
+    int i;
+    printf("Enter first sting:");
+    gets(s);
+    printf("string is:%s",s);
+    for(i=0;i<=strlen(s);i++)
+    {
+        if(s[i]>=65 && s[i]<90)
+        {
+            s[i]=s[i]+32;
+        }
+    }
+    printf("Lowercase string: %s ",s);
+}
