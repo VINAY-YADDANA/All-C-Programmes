@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+
+int main()
+{   char str[39];
+    unsigned int l;
+    printf("Enter string:");
+    //scanf("%s",str);
+    gets(str);
+    printf("Entered string is:%s",str);
+    l=strlen(str);
+    printf("length:%d",l);
+    return 0;
+}
