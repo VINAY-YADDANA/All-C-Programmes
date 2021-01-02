@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+void main()
+{
+    int l1,l2;
+    char s1[20];
+    char s2[20];
+    printf("Enter first sting:");
+    gets(s1);
+    printf("Enter second sting:");
+    gets(s2);
+    printf("strings are %s , %s ",s1,s2);
+    l1=strlen(s1);
+    l2=strlen(s2);
+    for(int i=0;i<=l2;i++)
+    {
+        s1[l1+i]=s2[i];
+    }
+    printf("Merged string: %s ",s1);
+}
